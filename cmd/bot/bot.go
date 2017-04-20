@@ -100,6 +100,16 @@ var AIRHORN *SoundCollection = &SoundCollection{
 	},
 }
 
+var YESYES *SoundCollection = &SoundCollection{
+	Prefix: "yesyes",
+	Commands: []string{
+		"!yesyes",
+	},
+	Sounds: []*Sound{
+		createSound("yestwice", 1000, 250),
+	},
+}
+
 var KHALED *SoundCollection = &SoundCollection{
 	Prefix:    "another",
 	ChainWith: AIRHORN,
@@ -193,6 +203,7 @@ var WOW *SoundCollection = &SoundCollection{
 
 var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	AIRHORN,
+	YESYES,
 	KHALED,
 	CENA,
 	ETHAN,
